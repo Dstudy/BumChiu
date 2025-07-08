@@ -15,13 +15,9 @@ public class PlayerBullet : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "EnemyShip")
+        if (collision.gameObject.tag == "EnemyShip" || collision.gameObject.tag == "Stone" || collision.gameObject.tag == "Barrier")
         {
-            Destroy(gameObject);
-        }
-        if (collision.gameObject.tag == "Stone")
-        {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }

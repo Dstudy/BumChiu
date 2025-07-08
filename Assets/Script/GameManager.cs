@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public GameObject stone;
     public static float screenHeight;
     public static float screenWidth;
+    
     private void Start()
     {
         timer = 0;

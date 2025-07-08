@@ -8,6 +8,7 @@ TagManager:
   - PlayerBullet
   - Stone
   - EnemyBullet
+  - Barrier
   layers:
   - Default
   - TransparentFX
